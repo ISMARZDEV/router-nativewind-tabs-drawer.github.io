@@ -9,7 +9,7 @@ const App = () => {
   //       <Text className="text-2xl font-bold mb-4 font-work-black text-primary">
   //         ¡Hola Mundo!
   //       </Text>
-  //       <Text className="text-4xl font-bold mb-4 font-work-medium text-secondary-100">
+  //       <Text className="text-4xl font-bold mb-4 font-work-medium text-secorndary-100">
   //         ¡Hola Mundo!
   //       </Text>
   //       <Text className="text-5xl font-bold mb-4 font-work-light text-tertiary">
