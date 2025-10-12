@@ -6,7 +6,7 @@ import "./global.css"
 const RootLayout = () => {
   return (
     <SafeAreaProvider>
-      <Slot/>
+      <Slot />
     </SafeAreaProvider>
   )
 }
