@@ -1,5 +1,5 @@
 import CustomButton from "@/components/shared/CustomButton";
-import { Link, router } from "expo-router";
+import { router } from "expo-router";
 import React from "react";
 import { View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -18,9 +18,25 @@ const HomeScreen = () => {
         </CustomButton>
 
         <CustomButton
+          className="mb-4"
+          color="secondary"
+          onPress={() => router.push("./profile")}
+        >
+          Perfil
+        </CustomButton>
+
+        <CustomButton
+          className="mb-4"
+          color="tertiary"
+          onPress={() => router.push("./settings")}
+        >
+          Ajustes
+        </CustomButton>
+
+        <CustomButton
           variant="text-only"
           color="primary"
-          onPress={() => router.push("./products")}
+          onPress={() => router.push("./")}
         >
           Productos
         </CustomButton>
