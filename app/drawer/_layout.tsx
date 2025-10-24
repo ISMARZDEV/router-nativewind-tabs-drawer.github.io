@@ -1,14 +1,32 @@
+import CustomDrawer from "@/components/shared/CustomDrawer";
+import { Ionicons } from "@expo/vector-icons";
 import { Drawer } from "expo-router/drawer";
 import React from "react";
 
 const DrawerLayout = () => {
   return (
-    <Drawer>
+    <Drawer
+      drawerContent={CustomDrawer}
+      screenOptions={{
+        overlayColor: "rgba(0,0,0,0.4)",
+        drawerActiveTintColor: "indigo",
+        headerShadowVisible: false,
+        drawerStyle: {
+          backgroundColor: "white",
+        },
+        sceneStyle: {
+          backgroundColor: "white",
+        },
+      }}
+    >
       <Drawer.Screen
         name="user/index"
         options={{
           drawerLabel: "User",
           title: "Usuario",
+          drawerIcon: ({ color, size }) => (
+            <Ionicons name="person-circle-outline" size={size} color={color} />
+          ),
         }}
       />
       <Drawer.Screen
@@ -16,6 +34,9 @@ const DrawerLayout = () => {
         options={{
           drawerLabel: "Horario",
           title: "Horario",
+          drawerIcon: ({ color, size }) => (
+            <Ionicons name="calendar-outline" size={size} color={color} />
+          ),
         }}
       />
     </Drawer>
