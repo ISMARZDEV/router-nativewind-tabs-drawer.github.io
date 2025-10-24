@@ -5,32 +5,29 @@ const StackLayout = () => {
   return (
     <Stack
       screenOptions={{
-
-      headerShown: true,
-      headerShadowVisible: false,
-      headerBackVisible: false,
-      animation: "slide_from_right",
-      contentStyle: {
-        backgroundColor: 'white'
-      },
-      headerTitleAlign: 'center',
+        headerShown: true,
+        headerShadowVisible: false,
+        headerBackVisible: true,
+        animation: "slide_from_right",
+        contentStyle: {
+          backgroundColor: "white",
+        },
+        headerTitleAlign: "center",
       }}
     >
       <Stack.Screen
-      name="home/index"
-      options={{
-        title: "Inicio",
-      }}
-      
+        name="home/index"
+        options={{
+          title: "Inicio",
+        }}
       />
 
-      <Stack.Screen name="products/index"
-      options={{
-        title: "perfil",
-      }}
-      >
-
-      </Stack.Screen>
+      <Stack.Screen
+        name="products/index"
+        options={{
+          title: "perfil",
+        }}
+      ></Stack.Screen>
 
       <Stack.Screen
         name="profile/index"
