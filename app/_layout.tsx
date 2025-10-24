@@ -22,6 +22,8 @@ const RootLayout = () => {
 
   return (
     <Slot />
+    
+    // <Slot />
 
     //   <Stack />
   );
